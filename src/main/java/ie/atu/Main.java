@@ -4,20 +4,18 @@ public class Main {
     public static void main(String[] args) {
         Person person1 = new Person("Tamer Z", "BallyBane", "12345");
 
-        // Accessing information using accessor methods
         System.out.println("Name: " + person1.getName());
         System.out.println("Address: " + person1.getAddress());
         System.out.println("Phone Number: " + person1.getNumber());
 
-        // Updating information using mutator methods
-        person1.setAddress("Dublin Rd");
-        person1.setNumber("54321");
+        Customer customer = new Customer("Jane Smith", "Dublin Rd", "54321", 12321, true);
 
-        // Displaying updated information
-        System.out.println("\nUpdated Information:");
-        System.out.println("Name: " + person1.getName());
-        System.out.println("Address: " + person1.getAddress());
-        System.out.println("Phone Number: " + person1.getNumber());
+        // Access and modify Customer's information
+        System.out.println("\nCustomer's Name: " + customer.getName());
+        System.out.println("Customer's Address: " + customer.getAddress());
+        System.out.println("Customer's Telephone Number: " + customer.getNumber());
+        System.out.println("Customer Number: " + customer.getCustomerNumber());
+        System.out.println("On Mailing List: " + customer.isOnMailingList());
 
     }
 }
